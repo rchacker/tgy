@@ -123,6 +123,12 @@ Notes
 
 Building from Source
 --------------------
+
+My method from the command line, commenting out the targets not needed.
+avrasm2 -fI kk2.asm
+avrdude -c usbasp -p m8 -U flash:w:tgy.hex
+
+
 AVRA 1.3.0 or newer or avrasm2, part of the AVR Tools, should assemble
 this source. AVRA should also build on a Mac. "make all" will emit a
 .hex file for every build target; "make binary_zip" will make a release
